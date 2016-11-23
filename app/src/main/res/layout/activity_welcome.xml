@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logo_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:transitionName="@string/transition_logo_holder"
+    tools:context=".setup.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/coffee_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/jug_logo"
+        android:transitionName="@string/transition_logo"/>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coffee_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_to_coffee"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_light"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/welcome_missing_jug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcome_learn_more"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_missing_jug"
+        android:textColor="@color/primary_light"/>
+
+    <Button
+        android:id="@+id/welcome_setup_btn"
+        style="@style/AppTheme.ButtonOutline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcome_missing_jug"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="@string/welcome_setup_btn"/>
+
+    <Button
+        android:id="@+id/welcome_learn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:background="@null"
+        android:minHeight="0dp"
+        android:text="@string/welcome_learn_more"
+        android:textAllCaps="false"
+        android:textColor="@color/accent"/>
+
+</RelativeLayout>

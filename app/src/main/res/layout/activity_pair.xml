@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="me.dawars.coffeetracker.setup.PairActivity">
+
+    <RelativeLayout
+        android:id="@+id/logo_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/primary"
+        android:transitionName="@string/transition_logo_holder"
+        android:translationZ="2dp">
+
+        <ImageView
+            android:id="@+id/coffee_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/jug_logo"
+            android:transitionName="@string/transition_logo" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/pair_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_holder"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/select_jug"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pair_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pair_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pair_instruction"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:background="@color/primary"
+        android:padding="4dp"
+        android:translationZ="4dp">
+
+        <ImageButton
+            android:id="@+id/pair_refresh_btn"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:minWidth="0dp"
+            android:src="@drawable/ic_reload_white_36dp"
+            android:tint="@color/primary_light" />
+
+        <Button
+            android:id="@+id/pair_no_jug_btn"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="48dp"
+            android:text="@string/pair_no_jug"
+            android:textColor="@color/primary_light" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pair_wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/pair_text"
+        android:background="@null"
+        android:headerDividersEnabled="true"
+        android:paddingTop="10dp" />
+
+
+    <FrameLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/pair_text">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</RelativeLayout>

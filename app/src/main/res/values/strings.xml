@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kaffee</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_delete">Delete jug</string>
+    <string name="welcome_to_coffee">Welcome to <b>Kaffee</b></string>
+    <string name="welcome_setup_btn">Set up your Jug</string>
+    <string name="welcome_missing_jug">Don\'t have a jug?</string>
+    <string name="select_jug">Select your Jug</string>
+    <string name="pair_instruction">Make sure that the jug is turned on.</string>
+    <string name="pair_no_jug">I don\'t see my Jug</string>
+    <string name="select_wifi">Select your Wi-Fi network</string>
+    <string name="connect_jug">Connect Jug</string>
+    <string name="welcome_learn_more">Learn more about the Smart Coffee Jug</string>
+    <string name="transition_logo_holder" translatable="false">TRANSITION_LOGO_HOLDER</string>
+    <string name="transition_logo" translatable="false">TRANSITION_LOGO</string>
+    <string name="select_home_wifi">Select your Wi-Fi network</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="temperature">Temperature</string>
+    <string name="level">Level</string>
+    <string name="battery">Battery</string>
+    <string name="alarm">Alarm</string>
+    <string name="connect">Connect</string>
+    <string name="connect_other">Other network</string>
+    <string name="cancel">Cancel</string>
+    <string name="show_password">Show password</string>
+    <string name="password">Password</string>
+    <string name="network_name">Network name</string>
+    <string name="add_network">Add network</string>
+    <string name="pour"># pour</string>
+</resources>

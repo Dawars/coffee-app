@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/button_outline_disabled"
+        android:state_enabled="false"
+        />
+    <item
+        android:drawable="@drawable/button_outline_pressed"
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <color android:color="@color/primary_dark"/>
+    </item>
+
+    <item
+        android:drawable="@drawable/button_outline_pressed"
+        android:state_enabled="true"
+        android:state_focused="true"/>
+    <item
+        android:drawable="@drawable/button_outline_enabled"
+        android:state_enabled="true"
+        />
+</selector>
